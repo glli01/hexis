@@ -1,12 +1,11 @@
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { RiBearSmileLine } from 'react-icons/ri'
 
 const navigation = [
-  { name: 'Dashboard', href: '#/', current: true },
-  { name: 'Team', href: '#/', current: false },
-  { name: 'Projects', href: '#/', current: false },
-  { name: 'Calendar', href: '#/', current: false },
+  { name: 'Arbiters', href: '#/', current: true },
+  { name: 'About', href: '#/', current: false },
 ]
 
 function classNames(...classes) {
@@ -15,7 +14,7 @@ function classNames(...classes) {
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="bg-gray-800 shadow-lg fixed w-screen">
+    <Disclosure as="nav" className="nav bg-gray-800 shadow-lg fixed w-screen">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -32,18 +31,9 @@ export default function Navbar() {
                 </Disclosure.Button>
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                <div className="flex flex-shrink-0 items-center">
-                  <img
-                    className="block h-8 w-auto lg:hidden"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                    alt="Your Company"
-                  />
-                  <img
-                    className="hidden h-8 w-auto lg:block"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                    alt="Your Company"
-                  />
-                </div>
+                <a href="/" className="flex flex-shrink-0 items-center cursor-pointer">
+                  <RiBearSmileLine className="block h-8 w-auto lg:block text-slate-50"></RiBearSmileLine>
+                </a>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
@@ -99,7 +89,7 @@ export default function Navbar() {
                             href="#"
                             className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
                           >
-                            Your Profile
+                            Why are you
                           </a>
                         )}
                       </Menu.Item>
@@ -109,7 +99,7 @@ export default function Navbar() {
                             href="#"
                             className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
                           >
-                            Settings
+                            Trying to
                           </a>
                         )}
                       </Menu.Item>
@@ -119,7 +109,7 @@ export default function Navbar() {
                             href="#"
                             className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
                           >
-                            Sign out
+                            Login?
                           </a>
                         )}
                       </Menu.Item>

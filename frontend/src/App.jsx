@@ -2,9 +2,9 @@ import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar';
 import { useEffect , useState} from 'react';
-import arbitrations from './arbitration-translations';
 import axios from 'axios';
-
+import { GiBearFace } from 'react-icons/gi';
+import { Table } from './components/Table';
 const App = () => {
   const [itemPrices, setItemPrices] = useState({});
 
@@ -25,31 +25,23 @@ const App = () => {
       <Navbar/>
       <div className="body w-screen bg-slate-700">
         <div className="grid w-screen place-items-center">
-          <div className="w-screen h-40">
-            <img src={logo} className="w-screen h-40 object-cover" />
+          <div className="w-screen h-56">
+            <img src="/497945.jpg" className="w-screen h-96 object-cover" />
           </div>
-          <table className="sm: table-auto w-4/5 theme-dark text-left">
-            <thead className="text-white font-bold bg-slate-800">
-              <tr className="h-4 p-3">
-                <th>Reward</th>
-                <th>Vitus Cost</th>
-                <th>Market Price</th>
-                <th>Quantity Traded </th>
-                <th>Vitus/Plat</th>
-              </tr>
-            </thead>
-            <tbody className="text-white bg-slate-600">
-              {arbitrations.offerings.map(item => (<tr>
-                <td> {item.name}</td>
-                <td> {item.cost}</td>
-                <td> {item.marketPrice ? item.marketPrice: "N/A"}</td>
-                <td> {item.quantity ? item.quantity: "N/A"} </td>
-                <td> {item.cost && !isNaN(item.marketPrice) ? item.marketPrice/item.cost: "N/A"} </td>
-              </tr>))}
-            </tbody>
-          </table>
+          <div className="h-40 w-screen relative bg-slate-800 bg-opacity-60 grid place-items-center">
+            <div className="absolute banner">
+              <img src="/arbiters.png" className="ring ring-sky-300 w-40 h-40 object-cover rounded-full shadow-lg"/>
+            </div>
+            <div className="text-slate-50 text-2xl font-semibold pt-20">The Arbiter's Of Hexis <br/> <div className="text-xl text-slate-300 font-normal">Arbitration Rewards</div></div>
+          </div>
+          <Table></Table>
+        </div>
+        <div className="h-10"> </div>
+        <div className="h-20 grid w-screen place-items-end place-items-center text-white font-semibold"> 
+          <div className="grid place-items-center"><span className="flex footer"><GiBearFace/> <a href="" className="hover:text-sky-300"> GiantTeddyBear </a></span></div> 
         </div>
       </div>
+
     </div>
   );
 }
