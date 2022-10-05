@@ -29,9 +29,9 @@ const App = () => {
             <img src="/497945.jpg" className="w-screen h-96 object-cover" />
           </div>
           <div className="h-40 w-screen relative bg-slate-800 bg-opacity-60 grid place-items-center">
-            <div className="absolute banner">
-              <img src="/arbiters.png" className="ring ring-sky-300 w-40 h-40 object-cover rounded-full shadow-lg"/>
-            </div>
+            <a href="https://warframe.fandom.com/wiki/Arbiters_of_Hexis#Arbitration_Honors" className="absolute banner">
+              <img src="/arbiters.png" className="cursor-pointer hvr-grow ring ring-sky-300 w-40 h-40 object-cover rounded-full shadow-lg"/>
+            </a>
             <div className="text-slate-50 text-2xl font-semibold pt-20">The Arbiter's Of Hexis <br/> <div className="text-xl text-slate-300 font-normal">Arbitration Rewards</div></div>
           </div>
           <Table></Table>

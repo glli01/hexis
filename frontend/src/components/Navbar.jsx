@@ -4,7 +4,7 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import { RiBearSmileLine } from 'react-icons/ri'
 
 const navigation = [
-  { name: 'Arbiters', href: '#/', current: true },
+  { name: 'Arbitrations', href: '#/', current: true },
   { name: 'About', href: '#/', current: false },
 ]
 
@@ -68,7 +68,7 @@ export default function Navbar() {
                       <span className="sr-only">Open user menu</span>
                       <img
                         className="h-8 w-8 rounded-full"
-                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                        src="/Seinfeld.png"
                         alt=""
                       />
                     </Menu.Button>
@@ -89,7 +89,7 @@ export default function Navbar() {
                             href="#"
                             className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
                           >
-                            Why are you
+                            No account necessary!
                           </a>
                         )}
                       </Menu.Item>
@@ -99,7 +99,7 @@ export default function Navbar() {
                             href="#"
                             className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
                           >
-                            Trying to
+                            Or ... ... ...
                           </a>
                         )}
                       </Menu.Item>
@@ -109,7 +109,7 @@ export default function Navbar() {
                             href="#"
                             className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
                           >
-                            Login?
+                            Is it?
                           </a>
                         )}
                       </Menu.Item>
