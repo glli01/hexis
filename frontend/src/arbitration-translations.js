@@ -29,109 +29,127 @@ const arbitrations = {
             "name": "Sharpshooter",
             "cost": 20,
             "tradable": true,
-            "market_name": "sharpshooter"
+            "market_name": "sharpshooter",
+            "wiki_link": "https://warframe.fandom.com/wiki/Sharpshooter"
         },
         {
             "name": "Cautious Shot",
             "cost": 20,
             "tradable": true,
-            "market_name": "cautious_shot"
+            "market_name": "cautious_shot",
+            "wiki_link": "https://warframe.fandom.com/wiki/Cautious_Shot"
         },
         {
             "name": "Power Donation",
             "cost": 20,
             "tradable": true,
-            "market_name": "power_donation"
+            "market_name": "power_donation",
+            "wiki_link": "https://warframe.fandom.com/wiki/Power_Donation"
         },
         {
             "name": "Vigorous Swap",
             "cost": 20,
             "tradable": true,
-            "market_name": "vigorous_swap"
+            "market_name": "vigorous_swap",
+            "wiki_link": "https://warframe.fandom.com/wiki/Vigorous_Swap"
         },
         {
             "name": "Rolling Guard",
             "cost": 20,
             "tradable": true,
-            "market_name": "rolling_guard"
+            "market_name": "rolling_guard",
+            "wiki_link": "https://warframe.fandom.com/wiki/Rolling_Guard"
         },
         {
             "name": "Preparation",
             "cost": 30,
             "tradable": true,
-            "market_name": "preparation"
+            "market_name": "preparation",
+            "wiki_link": "https://warframe.fandom.com/wiki/Preparation"
         },
         {
             "name": "Aerial Ace",
             "cost": 30,
             "tradable": true,
-            "market_name": "aerial_ace"
+            "market_name": "aerial_ace",
+            "wiki_link": "https://warframe.fandom.com/wiki/Aerial_Ace"
         },
         {
             "name": "Mending Shot",
             "cost": 30,
             "tradable": true,
-            "market_name": "mending_shot"
+            "market_name": "mending_shot",
+            "wiki_link": "https://warframe.fandom.com/wiki/Mending_Shot"
         },
         {
             "name": "Energizing Shot",
             "cost": 30,
             "tradable": true,
-            "market_name": "energizing_shot"
+            "market_name": "energizing_shot",
+            "wiki_link": "https://warframe.fandom.com/wiki/Energizing_Shot"
         },
         {
             "name": "Galvanized Acceleration",
             "cost": 20,
             "tradable": true,
-            "market_name": "galvanized_acceleration"
+            "market_name": "galvanized_acceleration",
+            "wiki_link": "https://warframe.fandom.com/wiki/Galvanized_Acceleration"
         },
         {
             "name": "Galvanized Aptitude",
             "cost": 20,
             "tradable": true,
-            "market_name": "galvanized_aptitude"
+            "market_name": "galvanized_aptitude",
+            "wiki_link": "https://warframe.fandom.com/wiki/Galvanized_Aptitude"
         },
         {
             "name": "Galvanized Chamber",
             "cost": 20,
             "tradable": true,
-            "market_name": "galvanized_chamber"
+            "market_name": "galvanized_chamber",
+            "wiki_link": "https://warframe.fandom.com/wiki/Galvanized_Chamber"
         },
         {
             "name": "Galvanized Crosshairs",
             "cost": 20,
             "tradable": true,
-            "market_name": "galvanized_crosshairs"
+            "market_name": "galvanized_crosshairs",
+            "wiki_link": "https://warframe.fandom.com/wiki/Galvanized_Crosshairs"
         },
         {
             "name": "Galvanized Diffusion",
             "cost": 20,
             "tradable": true,
-            "market_name": "galvanized_diffusion"
+            "market_name": "galvanized_diffusion",
+            "wiki_link": "https://warframe.fandom.com/wiki/Galvanized_Diffusion"
         },
         {
             "name": "Galvanized Hell",
             "cost": 20,
             "tradable": true,
-            "market_name": "galvanized_hell"
+            "market_name": "galvanized_hell",
+            "wiki_link": "https://warframe.fandom.com/wiki/Galvanized_Hell"
         },
         {
             "name": "Galvanized Savvy",
             "cost": 20,
             "tradable": true,
-            "market_name": "galvanized_savvy"
+            "market_name": "galvanized_savvy",
+            "wiki_link": "https://warframe.fandom.com/wiki/Galvanized_Savvy"
         },
         {
             "name": "Galvanized Scope",
             "cost": 20,
             "tradable": true,
-            "market_name": "galvanized_scope"
+            "market_name": "galvanized_scope",
+            "wiki_link": "https://warframe.fandom.com/wiki/Galvanized_Scope"
         },
         {
             "name": "Galvanized Shot",
             "cost": 20,
             "tradable": true,
-            "market_name": "galvanized_shot"
+            "market_name": "galvanized_shot",
+            "wiki_link": "https://warframe.fandom.com/wiki/Galvanized_Shot"
         },
         {
             "name": "Amprex Telos Skin",
@@ -171,7 +189,9 @@ const arbitrations = {
         {
             "name": "Ayatan Zambuka Sculpture",
             "cost": 50,
-            "tradable": true
+            "tradable": true,
+            "market_name": "ayatan_zambuka_sculpture",
+            "wiki_link": "https://warframe.fandom.com/wiki/Ayatan_Treasures"
         },
         {
             "name": "10,000 x Kuva",
@@ -182,7 +202,8 @@ const arbitrations = {
             "name": "Archgun Riven Mod (Veiled)",
             "cost": 35,
             "tradable": true,
-            "market_name": "arch_gun_riven_mod_(veiled)"
+            "market_name": "arch_gun_riven_mod_(veiled)",
+            "wiki_link": "https://warframe.fandom.com/wiki/Riven_Mods"
         },
         {
             "name": "Illumina Judicium",

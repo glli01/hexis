@@ -3,7 +3,7 @@ import { useState, useEffect, useRef} from 'react';
 import arbitrations from '../arbitration-translations';
 import './table.css'
 import Fuse from 'fuse.js'
-
+import { Link } from 'react-router-dom';
 
 export const Table = () => {
   const [data, setData] = useState(arbitrations.offerings);
@@ -58,12 +58,12 @@ export const Table = () => {
             </div>
             <ul className={`${filter === "" || searches.length === 0 ? "none":""} p-1 search__results absolute bg-slate-900 w-80 shadow-lg content-start text-left`}>
               {
-                searches.map(search => <li onClick={handleSearchClick(search.item)} className="hover:bg-slate-700 text-slate-200 text-md font-bold hover:text-sky-300 cursor-pointer pl-2 py-1">{search.item.name}</li>)
+                searches.map(search => <Link to={`/item/${search.item.market_name ? search.item.market_name:'strun_prime'}`}> <li className="hover:bg-slate-700 text-slate-200 text-md font-bold hover:text-sky-300 cursor-pointer pl-2 py-1">{search.item.name}</li></Link>)
               }
             </ul>
           </section>
           </div>
-          <table className="w table text-gray-500 dark:text-gray-400">
+          <table className="table text-gray-500 dark:text-gray-400">
             <thead className="table__head text-gray-700 uppercase bg-gray-50 dark:bg-slate-600 dark:text-slate-400">
               <tr>
                 <th>Reward</th>
@@ -75,8 +75,8 @@ export const Table = () => {
             </thead>
             <tbody className="table__body dark:bg-slate-800">
               {data.map(item => ( (item.tradable) ? <tr>
-                <td> {item.name}</td>
-                <td> {item.cost}</td>
+                <td><Link to={`/item/${item.market_name}`}>{item.name} </Link> </td>
+                <td className="text-purple-400"> {item.cost} ☁</td>
                 <td> {item.marketPrice ? item.marketPrice: "N/A"}</td>
                 <td> {item.quantity ? item.quantity: "N/A"} </td>
                 <td> {item.cost && !isNaN(item.marketPrice) ? item.marketPrice/item.cost: "N/A"} </td>

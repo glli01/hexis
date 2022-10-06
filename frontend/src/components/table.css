@@ -11,7 +11,8 @@
 }
 
 .table {
-    width: 65%;
+    width: clamp(680px, 80vw, 80rem);
+    align-items: stretch;
     font-size: 1rem;
     text-align: left;
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb( 00 0 0 / 0.1);
@@ -37,10 +38,17 @@
 
 .table__body tr:nth-child(odd){
     background-color: rgb(22, 34, 53);
-
 }
 .table__body tr:hover {
     background-color: rgb(104, 117, 136);
+}
+
+.table__body tr:hover td:nth-child(1){
+    color: #7dd3fc;
+}
+
+td:nth-child(1) {
+    cursor: pointer;
 }
 .table__body td {
     padding: 1rem 1.25rem;
@@ -49,4 +57,10 @@
 
 .none {
     display: none;
+}
+
+.parallax {
+    height: 200vh;
+    width: 100vw;
+    display: block;
 }
